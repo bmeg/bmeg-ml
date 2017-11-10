@@ -1,0 +1,12 @@
+[submodule "ml-schema"]
+	path = ml-schema
+	url = https://github.com/biostream/ml-schema.git
+[submodule "ga4gh-schemas"]
+	path = ga4gh-schemas
+	url = https://github.com/ga4gh/ga4gh-schemas.git
+[submodule "ml-schema/bmeg"]
+	path = ml-schema/bmeg
+	url = https://github.com/biostream/ml-schema.git
+[submodule "phenotype-schema/bmeg"]
+	path = phenotype-schema/bmeg
+	url = https://github.com/biostream/phenotype-schema.git
