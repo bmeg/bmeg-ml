@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='bmeg/ml_schema.proto',
   package='ml_schema',
   syntax='proto2',
-  serialized_pb=_b('\n\x14\x62meg/ml_schema.proto\x12\tml_schema\"z\n\x10ModelPerformance\x12\x10\n\x08model_id\x18\x01 \x01(\t\x12)\n\x07metrics\x18\x02 \x03(\x0b\x32\x18.ml_schema.MetricSummary\x12)\n\x07\x63utoffs\x18\x03 \x03(\x0b\x32\x18.ml_schema.CutoffMetrics\"s\n\x05Model\x12\n\n\x02id\x18\x01 \x01(\t\x12,\n\tstructure\x18\x02 \x01(\x0b\x32\x19.ml_schema.ModelStructure\x12\x30\n\x0bperformance\x18\x03 \x03(\x0b\x32\x1b.ml_schema.ModelPerformance\",\n\rMetricSummary\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02\"o\n\x0f\x43onfusionMatrix\x12\x15\n\rtrue_positive\x18\x01 \x01(\x02\x12\x15\n\rtrue_negative\x18\x02 \x01(\x02\x12\x16\n\x0e\x66\x61lse_positive\x18\x03 \x01(\x02\x12\x16\n\x0e\x66\x61lse_negative\x18\x04 \x01(\x02\"I\n\rCutoffMetrics\x12\r\n\x05value\x18\x01 \x01(\x02\x12)\n\x05truth\x18\x02 \x01(\x0b\x32\x1a.ml_schema.ConfusionMatrix\"?\n\x0eModelStructure\x12-\n\ncomponents\x18\x01 \x03(\x0b\x32\x19.ml_schema.ModelComponent\"\x91\x01\n\x0eModelComponent\x12\r\n\x05\x63oeff\x18\x01 \x01(\x02\x12\x34\n\rrandom_forest\x18\x02 \x01(\x0b\x32\x1b.ml_schema.RandomForestDataH\x00\x12\x32\n\x0clinear_coeff\x18\x03 \x01(\x0b\x32\x1a.ml_schema.LinearCoeffDataH\x00\x42\x06\n\x04\x44\x61ta\"\xcd\x01\n\x0c\x44\x65\x63isionTree\x12\x33\n\x05nodes\x18\x01 \x03(\x0b\x32$.ml_schema.DecisionTree.DecisionNode\x1a\x87\x01\n\x0c\x44\x65\x63isionNode\x12\x13\n\x0b\x61\x62ove_child\x18\x01 \x02(\x05\x12\x13\n\x0b\x62\x65low_child\x18\x02 \x02(\x05\x12\x16\n\x0esplit_variable\x18\x03 \x02(\t\x12\x13\n\x0bsplit_value\x18\x04 \x02(\x01\x12\x11\n\tleaf_node\x18\x05 \x02(\x08\x12\r\n\x05label\x18\x06 \x02(\x08\";\n\x10RandomForestData\x12\'\n\x06\x66orest\x18\x01 \x03(\x0b\x32\x17.ml_schema.DecisionTree\"\x97\x01\n\x0fLinearCoeffData\x12\x11\n\tintercept\x18\x01 \x01(\x02\x12\r\n\x05\x61lpha\x18\x02 \x01(\x02\x12\x34\n\x05\x63oeff\x18\x03 \x03(\x0b\x32%.ml_schema.LinearCoeffData.CoeffEntry\x1a,\n\nCoeffEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\"4\n\x12\x46\x65\x61tureCoefficient\x12\x0f\n\x07\x66\x65\x61ture\x18\x01 \x01(\t\x12\r\n\x05\x63oeff\x18\x02 \x01(\x02')
+  serialized_pb=_b('\n\x14\x62meg/ml_schema.proto\x12\tml_schema\"z\n\x10ModelPerformance\x12\x10\n\x08model_id\x18\x01 \x01(\t\x12)\n\x07metrics\x18\x02 \x03(\x0b\x32\x18.ml_schema.MetricSummary\x12)\n\x07\x63utoffs\x18\x03 \x03(\x0b\x32\x18.ml_schema.CutoffMetrics\"s\n\x05Model\x12\n\n\x02id\x18\x01 \x01(\t\x12,\n\tstructure\x18\x02 \x01(\x0b\x32\x19.ml_schema.ModelStructure\x12\x30\n\x0bperformance\x18\x03 \x03(\x0b\x32\x1b.ml_schema.ModelPerformance\",\n\rMetricSummary\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02\"o\n\x0f\x43onfusionMatrix\x12\x15\n\rtrue_positive\x18\x01 \x01(\x02\x12\x15\n\rtrue_negative\x18\x02 \x01(\x02\x12\x16\n\x0e\x66\x61lse_positive\x18\x03 \x01(\x02\x12\x16\n\x0e\x66\x61lse_negative\x18\x04 \x01(\x02\"I\n\rCutoffMetrics\x12\r\n\x05value\x18\x01 \x01(\x02\x12)\n\x05truth\x18\x02 \x01(\x0b\x32\x1a.ml_schema.ConfusionMatrix\"|\n\x0eModelStructure\x12\x34\n\rrandom_forest\x18\x01 \x01(\x0b\x32\x1b.ml_schema.RandomForestDataH\x00\x12,\n\x06linear\x18\x02 \x01(\x0b\x32\x1a.ml_schema.LinearCoeffDataH\x00\x42\x06\n\x04\x44\x61ta\"\xcd\x01\n\x0c\x44\x65\x63isionTree\x12\x33\n\x05nodes\x18\x01 \x03(\x0b\x32$.ml_schema.DecisionTree.DecisionNode\x1a\x87\x01\n\x0c\x44\x65\x63isionNode\x12\x13\n\x0b\x61\x62ove_child\x18\x01 \x02(\x05\x12\x13\n\x0b\x62\x65low_child\x18\x02 \x02(\x05\x12\x16\n\x0esplit_variable\x18\x03 \x02(\t\x12\x13\n\x0bsplit_value\x18\x04 \x02(\x01\x12\x11\n\tleaf_node\x18\x05 \x02(\x08\x12\r\n\x05label\x18\x06 \x02(\x08\";\n\x10RandomForestData\x12\'\n\x06\x66orest\x18\x01 \x03(\x0b\x32\x17.ml_schema.DecisionTree\"\x97\x01\n\x0fLinearCoeffData\x12\x11\n\tintercept\x18\x01 \x01(\x02\x12\r\n\x05\x61lpha\x18\x02 \x01(\x02\x12\x34\n\x05\x63oeff\x18\x03 \x03(\x0b\x32%.ml_schema.LinearCoeffData.CoeffEntry\x1a,\n\nCoeffEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\"4\n\x12\x46\x65\x61tureCoefficient\x12\x0f\n\x07\x66\x65\x61ture\x18\x01 \x01(\t\x12\r\n\x05\x63oeff\x18\x02 \x01(\x02')
 )
 
 
@@ -251,53 +251,15 @@ _MODELSTRUCTURE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='components', full_name='ml_schema.ModelStructure.components', index=0,
-      number=1, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=510,
-  serialized_end=573,
-)
-
-
-_MODELCOMPONENT = _descriptor.Descriptor(
-  name='ModelComponent',
-  full_name='ml_schema.ModelComponent',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='coeff', full_name='ml_schema.ModelComponent.coeff', index=0,
-      number=1, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='random_forest', full_name='ml_schema.ModelComponent.random_forest', index=1,
-      number=2, type=11, cpp_type=10, label=1,
+      name='random_forest', full_name='ml_schema.ModelStructure.random_forest', index=0,
+      number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='linear_coeff', full_name='ml_schema.ModelComponent.linear_coeff', index=2,
-      number=3, type=11, cpp_type=10, label=1,
+      name='linear', full_name='ml_schema.ModelStructure.linear', index=1,
+      number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -314,11 +276,11 @@ _MODELCOMPONENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='Data', full_name='ml_schema.ModelComponent.Data',
+      name='Data', full_name='ml_schema.ModelStructure.Data',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=576,
-  serialized_end=721,
+  serialized_start=510,
+  serialized_end=634,
 )
 
 
@@ -383,8 +345,8 @@ _DECISIONTREE_DECISIONNODE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=794,
-  serialized_end=929,
+  serialized_start=707,
+  serialized_end=842,
 )
 
 _DECISIONTREE = _descriptor.Descriptor(
@@ -413,8 +375,8 @@ _DECISIONTREE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=724,
-  serialized_end=929,
+  serialized_start=637,
+  serialized_end=842,
 )
 
 
@@ -444,8 +406,8 @@ _RANDOMFORESTDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=931,
-  serialized_end=990,
+  serialized_start=844,
+  serialized_end=903,
 )
 
 
@@ -482,8 +444,8 @@ _LINEARCOEFFDATA_COEFFENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1100,
-  serialized_end=1144,
+  serialized_start=1013,
+  serialized_end=1057,
 )
 
 _LINEARCOEFFDATA = _descriptor.Descriptor(
@@ -526,8 +488,8 @@ _LINEARCOEFFDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=993,
-  serialized_end=1144,
+  serialized_start=906,
+  serialized_end=1057,
 )
 
 
@@ -564,8 +526,8 @@ _FEATURECOEFFICIENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1146,
-  serialized_end=1198,
+  serialized_start=1059,
+  serialized_end=1111,
 )
 
 _MODELPERFORMANCE.fields_by_name['metrics'].message_type = _METRICSUMMARY
@@ -573,15 +535,14 @@ _MODELPERFORMANCE.fields_by_name['cutoffs'].message_type = _CUTOFFMETRICS
 _MODEL.fields_by_name['structure'].message_type = _MODELSTRUCTURE
 _MODEL.fields_by_name['performance'].message_type = _MODELPERFORMANCE
 _CUTOFFMETRICS.fields_by_name['truth'].message_type = _CONFUSIONMATRIX
-_MODELSTRUCTURE.fields_by_name['components'].message_type = _MODELCOMPONENT
-_MODELCOMPONENT.fields_by_name['random_forest'].message_type = _RANDOMFORESTDATA
-_MODELCOMPONENT.fields_by_name['linear_coeff'].message_type = _LINEARCOEFFDATA
-_MODELCOMPONENT.oneofs_by_name['Data'].fields.append(
-  _MODELCOMPONENT.fields_by_name['random_forest'])
-_MODELCOMPONENT.fields_by_name['random_forest'].containing_oneof = _MODELCOMPONENT.oneofs_by_name['Data']
-_MODELCOMPONENT.oneofs_by_name['Data'].fields.append(
-  _MODELCOMPONENT.fields_by_name['linear_coeff'])
-_MODELCOMPONENT.fields_by_name['linear_coeff'].containing_oneof = _MODELCOMPONENT.oneofs_by_name['Data']
+_MODELSTRUCTURE.fields_by_name['random_forest'].message_type = _RANDOMFORESTDATA
+_MODELSTRUCTURE.fields_by_name['linear'].message_type = _LINEARCOEFFDATA
+_MODELSTRUCTURE.oneofs_by_name['Data'].fields.append(
+  _MODELSTRUCTURE.fields_by_name['random_forest'])
+_MODELSTRUCTURE.fields_by_name['random_forest'].containing_oneof = _MODELSTRUCTURE.oneofs_by_name['Data']
+_MODELSTRUCTURE.oneofs_by_name['Data'].fields.append(
+  _MODELSTRUCTURE.fields_by_name['linear'])
+_MODELSTRUCTURE.fields_by_name['linear'].containing_oneof = _MODELSTRUCTURE.oneofs_by_name['Data']
 _DECISIONTREE_DECISIONNODE.containing_type = _DECISIONTREE
 _DECISIONTREE.fields_by_name['nodes'].message_type = _DECISIONTREE_DECISIONNODE
 _RANDOMFORESTDATA.fields_by_name['forest'].message_type = _DECISIONTREE
@@ -593,7 +554,6 @@ DESCRIPTOR.message_types_by_name['MetricSummary'] = _METRICSUMMARY
 DESCRIPTOR.message_types_by_name['ConfusionMatrix'] = _CONFUSIONMATRIX
 DESCRIPTOR.message_types_by_name['CutoffMetrics'] = _CUTOFFMETRICS
 DESCRIPTOR.message_types_by_name['ModelStructure'] = _MODELSTRUCTURE
-DESCRIPTOR.message_types_by_name['ModelComponent'] = _MODELCOMPONENT
 DESCRIPTOR.message_types_by_name['DecisionTree'] = _DECISIONTREE
 DESCRIPTOR.message_types_by_name['RandomForestData'] = _RANDOMFORESTDATA
 DESCRIPTOR.message_types_by_name['LinearCoeffData'] = _LINEARCOEFFDATA
@@ -641,13 +601,6 @@ ModelStructure = _reflection.GeneratedProtocolMessageType('ModelStructure', (_me
   # @@protoc_insertion_point(class_scope:ml_schema.ModelStructure)
   ))
 _sym_db.RegisterMessage(ModelStructure)
-
-ModelComponent = _reflection.GeneratedProtocolMessageType('ModelComponent', (_message.Message,), dict(
-  DESCRIPTOR = _MODELCOMPONENT,
-  __module__ = 'bmeg.ml_schema_pb2'
-  # @@protoc_insertion_point(class_scope:ml_schema.ModelComponent)
-  ))
-_sym_db.RegisterMessage(ModelComponent)
 
 DecisionTree = _reflection.GeneratedProtocolMessageType('DecisionTree', (_message.Message,), dict(
 

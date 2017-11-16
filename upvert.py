@@ -26,30 +26,26 @@ model_out = open("models.json", "w")
 with open(sys.argv[1]) as handle:
     for line in handle:
         s = json.loads(line)
-        
+
         model_id = "ucsc.edu/james-prediction/%s" % (s['name'])
-        pred = Predictor()        
+        pred = Predictor()
         pred.phenotype.type.term_id = "GO:0008219"
         pred.model_id = model_id
-        
+
         for i in s["signatureForEdges"]:
             drugs = i.replace("drug:", "").split(" (")[0]
             for drug in drugs.split(":"):
                 e = pred.environmental_contexts.add()
                 e.id = "pubchem.ncbi.nlm.nih.gov/compound/%s" % (PUBCHEM_MAP[drug])
         predictor_out.write( message_to_json(pred) + "\n" )
-        
+
         model = Model()
         model.id = model_id
-        comp = model.structure.components.add()
-        comp.linear_coeff.intercept = s["intercept"]
-        
+        model.structure.linear.intercept = s["intercept"]
+
         for k, v in s['coefficients'].items():
-            comp.linear_coeff.coeff[k] = v
+            model.structure.linear.coeff[k] = v
         model_out.write( message_to_json(model) + "\n" )
-        
+
 predictor_out.close()
 model_out.close()
-            
-    
-    
